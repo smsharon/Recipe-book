@@ -8,40 +8,25 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to Recipe Book</h1>
+        <h1>Recipe Book</h1>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Recipes</a></li>
-                <li><a href="#">Add recipe</a></li>
+                <li><a href="add_recipe.html">Add Recipe</a></li>
             </ul>
         </nav>
-        <p>Explore a collection of delicious and easy-to-make recipes.</p>
-        <input type="search" id="search" placeholder="Search recipes...">
     </header>
 
-    <main id="recipeContainer">
-        <!-- Recipe cards will be dynamically added here -->
+    <main>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search for recipes...">
+            <button id="searchButton">Search</button>
+        </div>
+
+        <section id="featuredRecipes">
+            <!-- Featured recipe cards will be dynamically added here -->
+        </section>
     </main>
-
-    <section id="addRecipeForm">
-        <h2>Add New Recipe</h2>
-        <form id="recipeForm">
-            <label for="recipeName">Recipe Name:</label>
-            <input type="text" id="recipeName" required>
-
-            <label for="ingredients">Ingredients:</label>
-            <textarea id="ingredients" required></textarea>
-
-            <label for="cookingInstructions">Cooking Instructions:</label>
-            <textarea id="cookingInstructions" required></textarea>
-
-            <label for="notes">Notes:</label>
-            <textarea id="notes"></textarea>
-
-            <button type="submit">Add Recipe</button>
-        </form>
-    </section>
 
     <script src="index.js"></script>
 </body>
