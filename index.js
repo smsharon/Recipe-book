@@ -79,6 +79,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const title = document.createElement('h3');
     title.textContent = recipe.strMeal;
 
+     // Add "Ingredients" heading
+  const ingredientsHeading = document.createElement('h4');
+  ingredientsHeading.textContent = 'Ingredients';
+
     const ingredients = [];
     for (let i = 1; i <= 20; i++) {
       const ingredient = recipe[`strIngredient${i}`];
@@ -95,6 +99,9 @@ document.addEventListener('DOMContentLoaded', () => {
       listItem.textContent = ingredient;
       ingredientsList.appendChild(listItem);
     });
+//add instructions heading
+    const instructionsHeading = document.createElement('h4');
+    instructionsHeading.textContent = 'Instructions';
 
     const instructions = document.createElement('p');
     instructions.textContent = `Instructions: ${recipe.strInstructions}`;
@@ -102,7 +109,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Append elements to the popup container
     popupContainer.appendChild(closeButton);
     popupContainer.appendChild(title);
+    popupContainer.appendChild(ingredientsHeading); // Add ingredients heading
     popupContainer.appendChild(ingredientsList);
+    popupContainer.appendChild(instructionsHeading); // Add instructions heading
     popupContainer.appendChild(instructions);
 
     // Append the popup container to the popup overlay
