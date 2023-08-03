@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
 
-    const ingredientsList = document.createElement('ul');
+    const ingredientsList = document.createElement('ol');
     ingredients.forEach((ingredient) => {
       const listItem = document.createElement('li');
       listItem.textContent = ingredient;
