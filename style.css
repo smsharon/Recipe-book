@@ -3,6 +3,8 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
+    
+    
 }
 
 header {
@@ -252,9 +254,9 @@ button[type="submit"]:hover {
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     padding: 20px;
-    max-width: 400px; /* Adjust the max-width to fit your content */
-    max-height: 80vh; /* Limit the height of the popup container */
-    overflow-y: auto; /* Add vertical scrollbar when content overflows */
+    width: 40%; /* Adjust the max-width to fit your content */
+    height: 60%; /* Limit the height of the popup container */
+    overflow-y: scroll; /* Add vertical scrollbar when content overflows */
   }
   
   .popup-container h3 {
@@ -279,4 +281,13 @@ button[type="submit"]:hover {
     font-size: 24px;
     color: #555;
   }
-  
+  /* adding scrollbar to recipe details*/
+  .popup-container::-webkit-scrollbar {
+    width: 10px;
+
+  }
+  .popup-container::-webkit-scrollbar-thumb{
+    background: #b5b5ba;
+    border-radius: 16px;
+    --webkit-border-radius: 16px;
+  }
