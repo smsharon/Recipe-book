@@ -53,9 +53,39 @@
         }
 
         // Function to display recipes on the page
-        function displayRecipes(recipes) {
-          // Logic to display recipes on your website (e.g., in cards, tables, etc.)
-        }
+function displayRecipes(recipes) {
+  const recipesContainer = document.createElement('div');
+  recipesContainer.setAttribute('id', 'recipesContainer');
+
+  recipes.forEach((recipe) => {
+    const recipeCard = document.createElement('div');
+    recipeCard.classList.add('recipe-card'); // You can add CSS classes for styling
+
+    const recipeName = document.createElement('h2');
+    recipeName.textContent = recipe.name;
+
+    const recipeCategory = document.createElement('p');
+    recipeCategory.textContent = 'Category: ' + recipe.category;
+
+    const recipeIngredients = document.createElement('p');
+    recipeIngredients.textContent = 'Ingredients: ' + recipe.ingredients;
+
+    const recipeInstructions = document.createElement('p');
+    recipeInstructions.textContent = 'Instructions: ' + recipe.instructions;
+
+    recipeCard.appendChild(recipeName);
+    recipeCard.appendChild(recipeCategory);
+    recipeCard.appendChild(recipeIngredients);
+    recipeCard.appendChild(recipeInstructions);
+
+    recipesContainer.appendChild(recipeCard);
+  });
+
+  // Add the recipes container to the main section of the page
+  const mainSection = document.querySelector('main');
+  mainSection.appendChild(recipesContainer);
+}
+
 
         // Function to handle form submission
         async function handleFormSubmit(event) {
