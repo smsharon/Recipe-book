@@ -1,0 +1,25 @@
+{
+  "recipes": [
+    {
+      "name": "porridge",
+      "category": "drink",
+      "ingredients": "tuytytyhytytyytytyytyty",
+      "instructions": "tutuhgdfuuhrugrguryhgu",
+      "id": 1
+    },
+    {
+      "name": "Tea",
+      "category": "drink",
+      "ingredients": "Water\nBlack tea leaves or tea bags\nSweetener (optional): sugar, honey, or your preferred sweetener\nMilk (optional)",
+      "instructions": "Boil the water: Pour fresh, cold water into a pot or kettle. The amount of water you use will depend on how many cups of tea you want to make. Bring the water to a rolling boil.\n\nWarm the teapot (optional): If you're using a teapot, you can warm it up by swirling some hot water inside and then pouring it out before adding the tea leaves or bags.\n\nAdd the tea: If using loose tea leaves, measure about one teaspoon per cup of water and place them into a tea infuser or directly into the teapot. If using tea bags, simply place one bag into the teapot or cup.\n\nSteep the tea: Pour the boiling water over the tea leaves or bags in the teapot. Let the tea steep for about 3 to 5 minutes, depending on how strong you like your tea. Steeping longer will result in a stronger flavor.\n\nAdd sweetener (optional): If you prefer your tea sweetened, add sugar, honey, or your preferred sweetener while the tea is still hot. Stir well to dissolve.\n\nAdd milk (optional): If you like your tea with milk, you can add a splash of milk to your cup. Adjust the amount to your taste.\n\nEnjoy your tea: Pour the freshly brewed tea into your cup, sit back, and savor the wonderful flavor.",
+      "id": 2
+    },
+    {
+      "name": "Hot chocolate",
+      "category": "snack",
+      "ingredients": "2 cups milk (whole milk or any milk of your choice)\n1/2 cup heavy cream (optional, for a creamier texture)\n1/4 cup unsweetened cocoa powder\n1/4 cup granulated sugar (adjust to your taste)\n1/4 teaspoon salt\n1 teaspoon vanilla extract\nWhipped cream, marshmallows, or chocolate shavings (optional, for garnish)",
+      "instructions": "In a medium-sized saucepan, combine the milk and heavy cream (if using) over medium heat. Heat the mixture until it starts to steam, but do not let it boil.\n\nIn a separate bowl, whisk together the cocoa powder, sugar, and salt until well combined.\n\nSlowly add the cocoa mixture to the saucepan with the milk and cream, stirring constantly to avoid any lumps.\n\nContinue to heat the mixture over medium heat, stirring occasionally, until it reaches your desired temperature. Be careful not to boil it.\n\nOnce the hot chocolate is heated through, remove the saucepan from the heat and stir in the vanilla extract.\n\nPour the hot chocolate into mugs and top with whipped cream, marshmallows, or chocolate shavings, if desired.\n\nServe immediately and enjoy your delicious homemade hot chocolate!",
+      "id": 3
+    }
+  ]
+}
