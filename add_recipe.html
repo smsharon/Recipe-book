@@ -16,27 +16,33 @@
             </ul>
         </nav>
     </header>
+      <section id="addRecipeForm">
+          <h2>Add a New Recipe</h2>
+          <form id="addRecipeForm">
+              <label for="recipeName">Recipe Name:</label>
+              <input type="text" id="recipeName" name="recipeName" required>
 
-    <main>
-        <form id="addRecipeForm">
-            <label for="recipeName">Recipe Name:</label>
-            <input type="text" id="recipeName" name="recipeName" required>
+              <label for="recipeCategory">Category:</label>
+              <input type="text" id="recipeCategory" name="recipeCategory" required>
 
-            <label for="recipeCategory">Category:</label>
-            <input type="text" id="recipeCategory" name="recipeCategory" required>
+              <label for="recipeIngredients">Ingredients:</label>
+              <textarea id="recipeIngredients" name="recipeIngredients" rows="4" required></textarea>
 
-            <label for="recipeIngredients">Ingredients:</label>
-            <textarea id="recipeIngredients" name="recipeIngredients" rows="4" required></textarea>
+              <label for="recipeInstructions">Instructions:</label>
+              <textarea id="recipeInstructions" name="recipeInstructions" rows="6" required></textarea>
 
-            <label for="recipeInstructions">Instructions:</label>
-            <textarea id="recipeInstructions" name="recipeInstructions" rows="6" required></textarea>
+              <button type="submit">Add Recipe</button>
+          </form>
+      </section>
 
-            <button type="submit">Add Recipe</button>
-        </form>
-    </main>
-
+      <section id="newlyAddedRecipes">
+          <h2>Newly Added Recipes</h2>
+          <div id="recipesSection">
+          <!-- Recipe cards will be dynamically added here -->
+          </div>
+      </section>
     <script>
-      // Script code here
+    
       document.addEventListener('DOMContentLoaded', () => {
         const API_URL = 'http://localhost:3000/recipes';
 
@@ -54,12 +60,12 @@
 
         // Function to display recipes on the page
 function displayRecipes(recipes) {
-  const recipesContainer = document.createElement('div');
-  recipesContainer.setAttribute('id', 'recipesContainer');
+  const recipesContainer = document.getElementById('recipesSection');
+
 
   recipes.forEach((recipe) => {
     const recipeCard = document.createElement('div');
-    recipeCard.classList.add('recipe-card'); // You can add CSS classes for styling
+    recipeCard.classList.add('recipe-card'); 
 
     const recipeName = document.createElement('h2');
     recipeName.textContent = recipe.name;
@@ -82,8 +88,8 @@ function displayRecipes(recipes) {
   });
 
   // Add the recipes container to the main section of the page
-  const mainSection = document.querySelector('main');
-  mainSection.appendChild(recipesContainer);
+  //const mainSection = document.querySelector('main');
+  //mainSection.appendChild(recipesContainer);
 }
 
 
