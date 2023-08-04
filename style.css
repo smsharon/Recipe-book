@@ -317,7 +317,20 @@ button[type="submit"]:hover {
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   padding: 10px;
+  /* Set desired width and height */
+  width: 300px;
+  height: 400px;
+  /* Center the content horizontally */
+  margin: 0 auto;
+  /* Add some space between recipe cards */
+  margin-bottom: 20px;
+  /* Ensure that padding and border are included in the dimensions */
+  box-sizing: border-box;
+  /* Overflow hidden to prevent content from overflowing */
+  overflow-y: scroll;
 }
+
+
 
 section h2 {
   text-align: center;
